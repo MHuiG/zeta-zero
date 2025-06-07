@@ -191,7 +191,7 @@ def compute(num,low,high):
     else:
         method = compute_Zeta_RS
     if CHANGE_METHOD == -1:
-        method = compute_Zeta_AS_ACC
+        method = compute_Zeta_RS_ACC
     zero = compute_zero(low, high, method)
     print("Zero No {}:\t".format(num))
     print(str(zero))
