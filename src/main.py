@@ -6,10 +6,10 @@ import time
 ACC=5
 ACCURACY = 1e-5
 ERROR = 1e-5
-CHANGE_METHOD = -1 # 200 0 -1
+CHANGE_METHOD = 200 # 200 0 -1
 ZeroNo = 0
 ZeroHigh = 0
-ZeroHighAdd = 100 #1000
+ZeroHighAdd = 1000 #1000
 
 PI = np.pi
 z = sym.Symbol('z')
