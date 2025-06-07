@@ -3,8 +3,8 @@ import sympy as sym
 from scipy.special import gamma, comb
 import time
 
-ACCURACY = 1e-10
-ERROR = 1e-10
+ACCURACY = 1e-5
+ERROR = 1e-5
 CHANGE_METHOD = 200
 
 PI = np.pi
