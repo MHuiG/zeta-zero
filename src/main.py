@@ -1,5 +1,5 @@
 print("hello")
 f = open("./results/test.md", 'w')
-f.write("|  No.   | Zero  |\n|  ----  | ----  |")
-f.write("| 1  | 32 |")
-f.write("| 2  | 23 |")
+f.write("|  No.   | Zero  |\n|  ----  | ----  |\n")
+f.write("| 1  | 32 |\n")
+f.write("| 2  | 23 |\n")
