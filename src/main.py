@@ -77,7 +77,7 @@ def compute_Phi(z0):
     return Phi_0.evalf(subs={z: z0}), Phi_1.evalf(subs={z: z0})
 
 def compute_C(z0):
-    return C_0.evalf(subs={z: z0}), C_1.evalf(subs={z: z0}), C_2.evalf(subs={z: z0}), C_3.evalf(subs={z: z0}), C_4.evalf(subs={z: z0})
+    return C_0.evalf(subs={p: z0}), C_1.evalf(subs={p: z0}), C_2.evalf(subs={p: z0}), C_3.evalf(subs={p: z0}), C_4.evalf(subs={p: z0})
 
 def compute_Zeta_RS(t):
     tau = np.sqrt(t / (2 * PI))
