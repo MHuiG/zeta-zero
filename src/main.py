@@ -99,6 +99,22 @@ def compute_zeta_RS(t):
     mu = complex(0.5, -t)
     return np.exp(mu) * compute_Zeta_RS(t)
 
+def compute_Zeta_RS_ACC(t):
+    tau = np.sqrt(t / (2 * PI))
+    m = np.floor(tau)
+    z0 = tau - m
+    Zeta = 0
+    n = 1
+    while n <= m:
+        Zeta += 2 * (np.cos(compute_theta(t) - t * np.log(n))) / np.sqrt(n)
+        n += 1
+    phi = compute_C(z0)
+    remain = phi[0] + (phi[1] / tau) + (phi[2] / (tau ** 2)) + (phi[3] / (tau ** 3)) + (phi[4] / (tau ** 4))
+    remain *= (-1) ** (m - 1)
+    remain /= np.sqrt(tau)
+    Zeta += remain
+    return Zeta
+
 def zeros_numbers(T):
     estimate = compute_theta(T) / PI + 1
     if estimate - np.floor(estimate) < np.ceil(estimate) - estimate:
