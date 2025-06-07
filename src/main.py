@@ -24,7 +24,7 @@ with open('./results/index.md', 'r') as file:
     ZeroNo = int(a[1])
     file.close()
 
-f = open("./results/"+str(ZeroHigh)+"-"+str(ZeroHigh+1000)+".md", 'w')
+f = open("./results/"+str(ZeroHigh)+"-"+str(ZeroHigh+ZeroHighAdd)+".md", 'w')
 f.write("|  No.   | Zero  |\n|  ----  | ----  |\n")
 
 f_index = open("./results/index.md", 'w')
