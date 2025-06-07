@@ -19,7 +19,7 @@ jobs:
       - name: Build
         run: |
           python src/main.py
-          echo `date +"%Y-%m-%d %H:%M:%S"` begin > results/time.log
+          echo `date +"%Y-%m-%d %H:%M:%S"` begin > results/time.md
       - name: Commit change & Push
         run: |
           git config user.name 'github-actions[bot]'
