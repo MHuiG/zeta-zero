@@ -6,7 +6,7 @@ import time
 ACC=10
 ACCURACY = 1e-10
 ERROR = 1e-10
-CHANGE_METHOD = 200
+CHANGE_METHOD = -1 # 200
 ZeroNo = 0
 ZeroHigh = 0
 ZeroHighAdd = 1000
@@ -190,6 +190,8 @@ def compute(num,low,high):
         method = compute_Zeta_AS
     else:
         method = compute_Zeta_RS
+    if CHANGE_METHOD == -1:
+        method = compute_Zeta_AS_ACC
     zero = compute_zero(low, high, method)
     print("Zero No {}:\t".format(num))
     print(str(zero))
