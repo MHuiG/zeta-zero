@@ -15,8 +15,8 @@ jobs:
           python-version: 3.x
       - name: Run a multi-line script
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          pip install -r requirements.txt
+          python ./src/main.py
       - name: Commit change & Push
         run: |
           git config user.name 'github-actions[bot]'
