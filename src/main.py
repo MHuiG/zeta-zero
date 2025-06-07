@@ -9,7 +9,7 @@ ERROR = 1e-10
 CHANGE_METHOD = -1 # 200
 ZeroNo = 0
 ZeroHigh = 0
-ZeroHighAdd = 1000
+ZeroHighAdd = 50 #1000
 
 PI = np.pi
 z = sym.Symbol('z')
