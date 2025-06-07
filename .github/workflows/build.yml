@@ -5,6 +5,7 @@ on:
     - cron: '0 20 * * *'
 jobs:
   build:
+    if: github.repository == 'MHuiG/zeta-zero'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
