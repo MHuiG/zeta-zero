@@ -8,7 +8,8 @@ ACCURACY = 1e-10
 ERROR = 1e-10
 CHANGE_METHOD = 200
 ZeroNo = 0
-ZeroHigh = 1000
+ZeroHigh = 0
+ZeroHighAdd = 1000
 
 PI = np.pi
 z = sym.Symbol('z')
@@ -21,9 +22,12 @@ with open('./results/index.md', 'r') as file:
     a = content.split()
     ZeroHigh = int(a[0])
     ZeroNo = int(a[1])
+    file.close()
 
-f = open("./results/test.md", 'w')
+f = open("./results/"+str(ZeroHigh)+"-"+str(ZeroHigh+1000)+".md", 'w')
 f.write("|  No.   | Zero  |\n|  ----  | ----  |\n")
+
+f_index = open("./results/index.md", 'w')
 
 def write_zero(no,zero):
   f.write("|  "+str(no)+" | 1/2+"+str(zero)+"i |\n")
@@ -118,6 +122,8 @@ def check_RH(T, delta):
     t2 = time.perf_counter()
     print("Total time cost: {} seconds.".format(t2 - t1))
     print("Average time cost: {} seconds per zero.".format(round((t2 - t1) / count_zeros, 7)))
+    f_index.write(str(ZeroHigh+ZeroHighAdd))
+    f_index.write(str(count_zeros))
     if count_zeros == zeros_numbers(T):
         return True
     else:
@@ -160,5 +166,5 @@ def compute(num,low,high):
 
 
 
-res=check_RH(ZeroHigh+1000, 0.1)
+res=check_RH(ZeroHigh+ZeroHighAdd, 0.1)
 print(res)
