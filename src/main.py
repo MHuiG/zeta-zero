@@ -3,8 +3,9 @@ import sympy as sym
 from scipy.special import gamma, comb
 import time
 
-ACCURACY = 1e-5
-ERROR = 1e-5
+ACC=10
+ACCURACY = 1e-10
+ERROR = 1e-10
 CHANGE_METHOD = 0
 
 PI = np.pi
@@ -97,8 +98,8 @@ def check_RH(T, delta):
     while t < T:
         if np.sign(compute_Zeta(t)) * compute_Zeta(t + delta) < 0:
             count_zeros += 1
-            print("Zero No.{}:\t({}, {})\n".format(count_zeros, np.round(t, 5), np.round(t+delta, 5)))
-            compute(count_zeros,np.round(t, 5),np.round(t+delta, 5))
+            print("Zero No.{}:\t({}, {})\n".format(count_zeros, np.round(t, ACC), np.round(t+delta, ACC)))
+            compute(count_zeros,np.round(t, ACC),np.round(t+delta, ACC))
         t += delta
     print("Find {} zeros with 0<t<{}.".format(count_zeros, T))
     print("Expecting {} zeros.".format(zeros_numbers(T)))
