@@ -16,6 +16,12 @@ z = sym.Symbol('z')
 Phi_0 = sym.cos(0.5 * sym.pi * (z ** 2) + 3 * sym.pi / 8) / sym.cos(sym.pi * z)
 Phi_1 = (1 / (12 * sym.pi * sym.pi)) * sym.diff(Phi_0, z, 3)
 
+p = sym.Symbol('p')
+C_0 = sym.cos(2 * sym.pi * ((p ** 2) - p - 1 / 16)) / sym.cos(2 * sym.pi * p)
+C_1 = - (1 / ((2 ** 5) * 3 * (sym.pi ** 2))) * sym.diff(C_0, p, 3)
+C_2 = (1 / ((2 ** 11) * (3 ** 2) * (sym.pi ** 4))) * sym.diff(C_0, p, 6) + (1 / ((2 ** 6) * (sym.pi ** 2))) * sym.diff(C_0, p, 2)
+C_3 = - (1 / ((2 ** 16) * (3 ** 4) * (sym.pi ** 6))) * sym.diff(C_0, p, 9) - (1 / ((2 ** 8) * 3 * 5 * (sym.pi ** 4))) * sym.diff(C_0, p, 5) - (1 / ((2 ** 6) * (sym.pi ** 2))) * sym.diff(C_0, p, 1)
+
 with open('./results/index.md', 'r') as file: 
     content = file.read() 
     print(content)
