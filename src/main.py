@@ -106,7 +106,7 @@ def compute_Zeta(t):
 
 def check_RH(T, delta):
     t1 = time.perf_counter()
-    t = delta
+    t = delta + ZeroHigh
     count_zeros = ZeroNo
     while t < T:
         if np.sign(compute_Zeta(t)) * compute_Zeta(t + delta) < 0:
