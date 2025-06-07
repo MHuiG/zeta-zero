@@ -17,7 +17,6 @@ f.write("|  No.   | Zero  |\n|  ----  | ----  |\n")
 def write_zero(no,zero):
   f.write("|  "+str(no)+" | 1/2+"+str(zero)+"i |\n")
 
-
 def compute_zeta_AS(t):
     mu = complex(0.5, -t)
     NUM = np.ceil((np.log2(1+2*t) + PI/2 * t * np.log2(np.e) - np.log2(ERROR) - np.log2(abs(1-2**mu))) / 3)
@@ -98,28 +97,57 @@ def check_RH(T, delta):
         if np.sign(compute_Zeta(t)) * compute_Zeta(t + delta) < 0:
             count_zeros += 1
             print("Zero No.{}:\t({}, {})\n".format(count_zeros, np.round(t, 5), np.round(t+delta, 5)))
+            compute(count_zeros,np.round(t, 5),np.round(t+delta, 5))
         t += delta
-
     print("Find {} zeros with 0<t<{}.".format(count_zeros, T))
     print("Expecting {} zeros.".format(zeros_numbers(T)))
-
     print("\n")
     print("Expecting {} zeros.\n".format(zeros_numbers(T)))
     print("Find {} zeros.\n".format(count_zeros))
-
     t2 = time.perf_counter()
     print("Total time cost: {} seconds.".format(t2 - t1))
     print("Average time cost: {} seconds per zero.".format(round((t2 - t1) / count_zeros, 7)))
-
     if count_zeros == zeros_numbers(T):
         return True
     else:
         return False
 
+def compute_zero(low, high, method, accuracy=ACCURACY):
+    if np.sign(method(low)) * np.sign(method(high)) > 0:
+        raise ValueError("Suspect there is no zero between {} and {}! Please check the interval.".format(low, high))
+    else:
+        err = high - low
+        mid = (high + low) / 2
+        low_value = method(low)
+        mid_value = method(mid)
+        high_value = method(high)
+        while err > accuracy:
+            if mid_value == 0:
+                return mid
+            elif np.sign(mid_value) * np.sign(low_value) < 0:
+                high = mid
+            elif np.sign(mid_value) * np.sign(high_value) < 0:
+                low = mid
+            err = high - low
+            mid = (high + low) / 2
+            low_value = method(low)
+            mid_value = method(mid)
+            high_value = method(high)
+        digit = -int(np.log10(accuracy))
+        return '%.{}f'.format(digit) % mid
+
+def compute(num,low,high):
+    if num < CHANGE_METHOD:
+        method = compute_Zeta_AS
+    else:
+        method = compute_Zeta_RS
+    zero = compute_zero(low, high, method)
+    print("Zero No {}:\t".format(num))
+    print(str(zero))
+    print("\n")
+    write_zero(num,zero)
 
 
 
-
-
-
-write_zero(1,11)
+res=check_RH(1000, 0.1)
+print(res)
