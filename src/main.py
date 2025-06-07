@@ -21,6 +21,7 @@ C_0 = sym.cos(2 * sym.pi * ((p ** 2) - p - 1 / 16)) / sym.cos(2 * sym.pi * p)
 C_1 = - (1 / ((2 ** 5) * 3 * (sym.pi ** 2))) * sym.diff(C_0, p, 3)
 C_2 = (1 / ((2 ** 11) * (3 ** 2) * (sym.pi ** 4))) * sym.diff(C_0, p, 6) + (1 / ((2 ** 6) * (sym.pi ** 2))) * sym.diff(C_0, p, 2)
 C_3 = - (1 / ((2 ** 16) * (3 ** 4) * (sym.pi ** 6))) * sym.diff(C_0, p, 9) - (1 / ((2 ** 8) * 3 * 5 * (sym.pi ** 4))) * sym.diff(C_0, p, 5) - (1 / ((2 ** 6) * (sym.pi ** 2))) * sym.diff(C_0, p, 1)
+C_4 = (1 / ((2 ** 23) * (3 ** 5) * (sym.pi ** 8))) * sym.diff(C_0, p, 12) + (11 / ((2 ** 17) * (3 ** 2) * 5 * (sym.pi ** 6))) * sym.diff(C_0, p, 8) + (19 / ((2 ** 13) * 3  * (sym.pi ** 4))) * sym.diff(C_0, p, 4) + (1 / ((2 ** 7) * (sym.pi ** 2))) * C_0
 
 with open('./results/index.md', 'r') as file: 
     content = file.read() 
