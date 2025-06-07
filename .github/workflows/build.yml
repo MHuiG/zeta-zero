@@ -18,7 +18,8 @@ jobs:
           pip install -r requirements.txt
       - name: Build
         run: |
-          python ./src/main.py
+          python src/main.py
+          echo `date +"%Y-%m-%d %H:%M:%S"` begin > results/time.log
       - name: Commit change & Push
         run: |
           git config user.name 'github-actions[bot]'
