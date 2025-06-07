@@ -122,8 +122,8 @@ def check_RH(T, delta):
     t2 = time.perf_counter()
     print("Total time cost: {} seconds.".format(t2 - t1))
     print("Average time cost: {} seconds per zero.".format(round((t2 - t1) / count_zeros, 7)))
-    f_index.write(str(ZeroHigh+ZeroHighAdd))
-    f_index.write(str(count_zeros))
+    f_index.write(str(ZeroHigh+ZeroHighAdd)+"\n")
+    f_index.write(str(count_zeros)+"\n")
     if count_zeros == zeros_numbers(T):
         return True
     else:
