@@ -11,8 +11,14 @@ z = sym.Symbol('z')
 Phi_0 = sym.cos(0.5 * sym.pi * (z ** 2) + 3 * sym.pi / 8) / sym.cos(sym.pi * z)
 Phi_1 = (1 / (12 * sym.pi * sym.pi)) * sym.diff(Phi_0, z, 3)
 
+f = open("./results/test.md", 'w')
+f.write("|  No.   | Zero  |\n|  ----  | ----  |\n")
 
-def Compute_Zeta_Alternating_Series(t):
+def write_zero(no,zero):
+  f.write("|  "+str(no)+" | 1/2+"+str(zero)+"i |\n")
+
+
+def compute_zeta_AS(t):
     mu = complex(0.5, -t)
     NUM = np.ceil((np.log2(1+2*t) + PI/2 * t * np.log2(np.e) - np.log2(ERROR) - np.log2(abs(1-2**mu))) / 3)
     def enum(k):
@@ -37,14 +43,83 @@ def Compute_Zeta_Alternating_Series(t):
     zeta /= 1-2**(1-s)
     return zeta
 
+def compute_Zeta_AS(t):
+    return (compute_zeta_AS(t) * np.exp(complex(0, compute_theta(t)))).real
 
-f = open("./results/test.md", 'w')
-f.write("|  No.   | Zero  |\n|  ----  | ----  |\n")
+def Chi(s):
+    return 2**s * PI**(s-1) * np.sin(PI*s/2) * gamma(1-s)
 
-def write_zero(no,zero):
-  f.write("|  "+str(no)+" | 1/2+"+str(zero)+"i |\n")
+def compute_theta(t):
+    return (t / 2) * np.log(t / (2 * PI)) - (t / 2) - PI / 8 + 1 / (48 * t) + 7 / (5760 * t ** 3)
+
+def compute_Phi(z0):
+    return Phi_0.evalf(subs={z: z0}), Phi_1.evalf(subs={z: z0})
+
+def compute_Zeta_RS(t):
+    tau = np.sqrt(t / (2 * PI))
+    m = np.floor(tau)
+    z0 = 2 * (tau - m) - 1
+    Zeta = 0
+    n = 1
+    while n <= m:
+        Zeta += 2 * (np.cos(compute_theta(t) - t * np.log(n))) / np.sqrt(n)
+        n += 1
+    phi = compute_Phi(z0)
+    remain = phi[0] - phi[1] / tau
+    remain *= (-1) ** (m + 1)
+    remain /= np.sqrt(tau)
+    Zeta += remain
+    return Zeta
+
+def compute_zeta_RS(t):
+    mu = complex(0.5, -t)
+    return np.exp(mu) * compute_Zeta_RS(t)
+
+def zeros_numbers(T):
+    estimate = compute_theta(T) / PI + 1
+    if estimate - np.floor(estimate) < np.ceil(estimate) - estimate:
+        return np.floor(estimate)
+    else:
+        return np.ceil(estimate)
+
+def compute_Zeta(t):
+    if (t < CHANGE_METHOD) and (t > 0):
+        return compute_Zeta_AS(t)
+    elif t >= CHANGE_METHOD:
+        return compute_Zeta_RS(t)
+    else:
+        raise TypeError("Argument t should be a positive real number.")
+
+def check_RH(T, delta):
+    t1 = time.perf_counter()
+    t = delta
+    count_zeros = 0
+    while t < T:
+        if np.sign(compute_Zeta(t)) * compute_Zeta(t + delta) < 0:
+            count_zeros += 1
+            print("Zero No.{}:\t({}, {})\n".format(count_zeros, np.round(t, 5), np.round(t+delta, 5)))
+        t += delta
+
+    print("Find {} zeros with 0<t<{}.".format(count_zeros, T))
+    print("Expecting {} zeros.".format(zeros_numbers(T)))
+
+    print("\n")
+    print("Expecting {} zeros.\n".format(zeros_numbers(T)))
+    print("Find {} zeros.\n".format(count_zeros))
+
+    t2 = time.perf_counter()
+    print("Total time cost: {} seconds.".format(t2 - t1))
+    print("Average time cost: {} seconds per zero.".format(round((t2 - t1) / count_zeros, 7)))
+
+    if count_zeros == zeros_numbers(T):
+        return True
+    else:
+        return False
 
 
-print("hello")
+
+
+
+
+
 write_zero(1,11)
-write_zero(2,22)
