@@ -115,6 +115,10 @@ def compute_Zeta_RS_ACC(t):
     Zeta += remain
     return Zeta
 
+def compute_zeta_RS_ACC(t):
+    mu = complex(0.5, -t)
+    return np.exp(mu) * compute_Zeta_RS_ACC(t)
+
 def zeros_numbers(T):
     estimate = compute_theta(T) / PI + 1
     if estimate - np.floor(estimate) < np.ceil(estimate) - estimate:
@@ -123,6 +127,8 @@ def zeros_numbers(T):
         return np.ceil(estimate)
 
 def compute_Zeta(t):
+    if CHANGE_METHOD == -1:
+        return compute_Zeta_AS_ACC(t)
     if (t < CHANGE_METHOD) and (t > 0):
         return compute_Zeta_AS(t)
     elif t >= CHANGE_METHOD:
