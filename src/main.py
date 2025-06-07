@@ -128,7 +128,7 @@ def zeros_numbers(T):
 
 def compute_Zeta(t):
     if CHANGE_METHOD == -1:
-        return compute_Zeta_AS_ACC(t)
+        return compute_Zeta_RS_ACC(t)
     if (t < CHANGE_METHOD) and (t > 0):
         return compute_Zeta_AS(t)
     elif t >= CHANGE_METHOD:
