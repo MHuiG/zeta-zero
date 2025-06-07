@@ -1,3 +1,5 @@
 print("hello")
-f = open("./results/test.txt", 'w')
-f.write("test")
+f = open("./results/test.md", 'w')
+f.write("|  No.   | Zero  |\n|  ----  | ----  |")
+f.write("| 1  | 32 |")
+f.write("| 2  | 23 |")
