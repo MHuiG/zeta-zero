@@ -7,11 +7,20 @@ ACC=10
 ACCURACY = 1e-10
 ERROR = 1e-10
 CHANGE_METHOD = 200
+ZeroNo = 0
+ZeroHigh = 1000
 
 PI = np.pi
 z = sym.Symbol('z')
 Phi_0 = sym.cos(0.5 * sym.pi * (z ** 2) + 3 * sym.pi / 8) / sym.cos(sym.pi * z)
 Phi_1 = (1 / (12 * sym.pi * sym.pi)) * sym.diff(Phi_0, z, 3)
+
+with open('./results/index.md', 'r') as file: 
+    content = file.read() 
+    print(content)
+    a = content.split()
+    ZeroHigh = int(a[0])
+    ZeroNo = int(a[1])
 
 f = open("./results/test.md", 'w')
 f.write("|  No.   | Zero  |\n|  ----  | ----  |\n")
@@ -94,7 +103,7 @@ def compute_Zeta(t):
 def check_RH(T, delta):
     t1 = time.perf_counter()
     t = delta
-    count_zeros = 0
+    count_zeros = ZeroNo
     while t < T:
         if np.sign(compute_Zeta(t)) * compute_Zeta(t + delta) < 0:
             count_zeros += 1
@@ -151,5 +160,5 @@ def compute(num,low,high):
 
 
 
-res=check_RH(1000, 0.1)
+res=check_RH(ZeroHigh+1000, 0.1)
 print(res)
