@@ -6,7 +6,7 @@ import time
 ACC=10
 ACCURACY = 1e-10
 ERROR = 1e-10
-CHANGE_METHOD = 0
+CHANGE_METHOD = 200
 
 PI = np.pi
 z = sym.Symbol('z')
