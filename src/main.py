@@ -202,3 +202,8 @@ def compute(num,low,high):
 
 res=check_RH(ZeroHigh+ZeroHighAdd, 0.1)
 print(res)
+
+if not res:
+    fe = open("./results/error.md", 'w')
+    fe.write("RH is not valid.\nHight:"+str(ZeroHigh+ZeroHighAdd))
+
