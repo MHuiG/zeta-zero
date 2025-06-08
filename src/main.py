@@ -3,10 +3,10 @@ import sympy as sym
 from scipy.special import gamma, comb
 import time
 
-ACC=5
-ACCURACY = 1e-5
+ACC=20
+ACCURACY = 1e-20
 ERROR = 1e-5
-CHANGE_METHOD = 200 # 200 0 -1
+CHANGE_METHOD = -1 # 200 0 -1
 ZeroNo = 0
 ZeroHigh = 0
 ZeroHighAdd = 1000 #1000
