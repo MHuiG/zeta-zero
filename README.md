@@ -6,4 +6,4 @@
 
 Calculate the non-trivial zeros of the Riemann $\zeta$ function.
 
-There is a rumor that they are all on the critical line where the complex plane is $\mathfrak{Re}(s)=\frac{1}{2}$.
+There is a rumor that they are all on the critical line of the complex plane $\mathfrak{Re}(s)=\frac{1}{2}$.
