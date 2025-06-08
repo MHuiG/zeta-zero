@@ -7,3 +7,7 @@
 Calculate the non-trivial zeros of the Riemann $\zeta$ function.
 
 There is a rumor that they are all on the critical line of the complex plane $\mathfrak{Re}(s)=\frac{1}{2}$.
+
+
+![zeta](./results/dynamical_zeta.gif)
+
