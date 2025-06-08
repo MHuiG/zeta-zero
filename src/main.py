@@ -23,21 +23,7 @@ C_2 = (1 / ((2 ** 11) * (3 ** 2) * (sym.pi ** 4))) * sym.diff(C_0, p, 6) + (1 / 
 C_3 = - (1 / ((2 ** 16) * (3 ** 4) * (sym.pi ** 6))) * sym.diff(C_0, p, 9) - (1 / ((2 ** 8) * 3 * 5 * (sym.pi ** 4))) * sym.diff(C_0, p, 5) - (1 / ((2 ** 6) * (sym.pi ** 2))) * sym.diff(C_0, p, 1)
 C_4 = (1 / ((2 ** 23) * (3 ** 5) * (sym.pi ** 8))) * sym.diff(C_0, p, 12) + (11 / ((2 ** 17) * (3 ** 2) * 5 * (sym.pi ** 6))) * sym.diff(C_0, p, 8) + (19 / ((2 ** 13) * 3  * (sym.pi ** 4))) * sym.diff(C_0, p, 4) + (1 / ((2 ** 7) * (sym.pi ** 2))) * C_0
 
-with open('./results/index.md', 'r') as file: 
-    content = file.read() 
-    print(content)
-    a = content.split()
-    ZeroHigh = int(a[0])
-    ZeroNo = int(a[1])
-    file.close()
 
-f = open("./results/"+str(ZeroHigh)+"-"+str(ZeroHigh+ZeroHighAdd)+".md", 'w')
-f.write("|  No.   | Zero  |\n|  ----  | ----  |\n")
-
-f_index = open("./results/index.md", 'w')
-
-def write_zero(no,zero):
-  f.write("|  "+str(no)+" | 1/2+"+str(zero)+"i |\n")
 
 def compute_zeta_AS(t):
     mu = complex(0.5, -t)
@@ -198,12 +184,27 @@ def compute(num,low,high):
     print("\n")
     write_zero(num,zero)
 
+if __name__ == "__main__":
+    with open('./results/index.md', 'r') as file: 
+        content = file.read() 
+        print(content)
+        a = content.split()
+        ZeroHigh = int(a[0])
+        ZeroNo = int(a[1])
+        file.close()
 
+    f = open("./results/"+str(ZeroHigh)+"-"+str(ZeroHigh+ZeroHighAdd)+".md", 'w')
+    f.write("|  No.   | Zero  |\n|  ----  | ----  |\n")
 
-res=check_RH(ZeroHigh+ZeroHighAdd, 0.1)
-print(res)
+    f_index = open("./results/index.md", 'w')
 
-if not res:
-    fe = open("./results/error.md", 'w')
-    fe.write("RH is not valid.\nHight:"+str(ZeroHigh+ZeroHighAdd))
+    def write_zero(no,zero):
+      f.write("|  "+str(no)+" | 1/2+"+str(zero)+"i |\n")
+
+    res=check_RH(ZeroHigh+ZeroHighAdd, 0.1)
+    print(res)
+
+    if not res:
+        fe = open("./results/error.md", 'w')
+        fe.write("RH is not valid.\nHight:"+str(ZeroHigh+ZeroHighAdd))
 
