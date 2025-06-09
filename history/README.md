@@ -104,7 +104,7 @@
 
 ## 2001 年
 
-- 魏德涅夫斯基 (Wedeniwski) 启动了计算黎曼 $\zeta$ 函数非平凡零点的分布式系统——ZetaGrid。
+- 魏德涅夫斯基 (Wedeniwski) 启动了计算黎曼 $\zeta$ 函数非平凡零点的分布式系统——ZetaGrid。 [...](https://web.archive.org/web/20131005173705/http://www.zetagrid.net/)
 
 ## 2004 年
 
