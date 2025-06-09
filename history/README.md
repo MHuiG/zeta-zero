@@ -2,7 +2,7 @@
 
 ## 1859 年
 
-- 黎曼 (Riemann) 提出了黎曼猜想 (Riemann Hypothesis)。
+- 黎曼 (Riemann) 提出了黎曼猜想 (Riemann Hypothesis)。 [...](https://www.maths.tcd.ie/pub/HistMath/People/Riemann/Zeta/EZeta.pdf)
 
 ## 1885 年
 
