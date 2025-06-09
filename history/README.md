@@ -10,7 +10,11 @@
 
 ## 1731 年
 
-- 欧拉(Euler)提出欧拉乘积公式(Euler product formula).
+- 欧拉 (Euler) 提出欧拉乘积公式(Euler product formula).
+
+## 1735 年
+
+- 欧拉 (Euler) 解决了巴塞尔问题.
 
 ## 1792 年
 
