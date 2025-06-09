@@ -18,19 +18,19 @@
 
 ## 1896 年
 
-- Hadamard 和 Vallée-Poussin (彼此独立地) 证明了 Riemann ζ 函数的非平凡零点全都分布在复平面上 0<Re(s)<1 的区域内， 并由此证明了素数定理。
+- 阿达马(Hadamard) 和 普森(Vallée-Poussin) (彼此独立地) 证明了 黎曼 $\zeta$ 函数的非平凡零点全都分布在复平面上 $0<Re(s)<1$ 的区域内， 并由此证明了素数定理。
 
 ## 1900 年
 
-- Hilbert 作了题为 “数学问题” 的著名演讲， Riemann 猜想被列为第八问题的一部分。
+- 希尔伯特(Hilbert) 作了题为 “数学问题” 的著名演讲， 黎曼猜想被列为第八问题的一部分。
 
 ## 1903 年
 
-- Gram 计算出了 Riemann ζ 函数前 15 个非平凡零点。
+- 格拉姆(Gram) 计算出了 黎曼 $\zeta$ 函数前 $15$ 个非平凡零点。
 
 ## 1905 年
 
-- von Mangoldt 证明了 Riemann-von Mangoldt 公式， 即 Riemann 的论文所提出的三个重要命题中的第一个。
+- 曼戈尔特(von Mangoldt) 证明了黎曼-曼戈尔特公式(Riemann–von Mangoldt formula)， 即黎曼的论文所提出的三个重要命题中的第一个。
 
 ## 1914 年
 
