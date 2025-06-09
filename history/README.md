@@ -14,7 +14,7 @@
 
 ## 1895 年
 
-- von Mangoldt 证明了对级数 Σρ ln(1-s/ρ) 的积分结果。
+- 曼戈尔特(von Mangoldt) 证明了对级数 $\sum\limits_{ρ}{ln(1-\frac{s}{ρ})}$ 的积分结果。
 
 ## 1896 年
 
