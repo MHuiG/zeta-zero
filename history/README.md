@@ -2,85 +2,85 @@
 
 ## 1859 年
 
-- 黎曼(Riemann)提出了黎曼猜想(Riemann Hypothesis)。
+- 黎曼 (Riemann) 提出了黎曼猜想 (Riemann Hypothesis)。
 
 ## 1885 年
 
-- 斯蒂尔切斯(Stieltjes) 宣称证明了比黎曼猜想更强的命题 (但从未发布证明，也未得到数学界的承认)。
+- 斯蒂尔切斯 (Stieltjes) 宣称证明了比黎曼猜想更强的命题 (但从未发布证明，也未得到数学界的承认)。
 
 ## 1893 年
 
-- 阿达马(Hadamard) 证明了黎曼辅助函数 $\xi(s)$ 的连乘积表达式。
+- 阿达马 (Hadamard) 证明了黎曼辅助函数 $\xi(s)$ 的连乘积表达式。
 
 ## 1895 年
 
-- 曼戈尔特(von Mangoldt) 证明了对级数 $\sum\limits_{ρ}{ln(1-\frac{s}{ρ})}$ 的积分结果。
+- 曼戈尔特 (von Mangoldt) 证明了对级数 $\sum\limits_{ρ}{ln(1-\frac{s}{ρ})}$ 的积分结果。
 
 ## 1896 年
 
-- 阿达马(Hadamard) 和 普森(Vallée-Poussin) (彼此独立地) 证明了 黎曼 $\zeta$ 函数的非平凡零点全都分布在复平面上 $0<Re(s)<1$ 的区域内， 并由此证明了素数定理。
+- 阿达马 (Hadamard) 和 普森 (Vallée-Poussin) (彼此独立地) 证明了 黎曼 $\zeta$ 函数的非平凡零点全都分布在复平面上 $0<Re(s)<1$ 的区域内， 并由此证明了素数定理。
 
 ## 1900 年
 
-- 希尔伯特(Hilbert) 作了题为 “数学问题” 的著名演讲， 黎曼猜想被列为第八问题的一部分。
+- 希尔伯特 (Hilbert) 作了题为 “数学问题” 的著名演讲， 黎曼猜想被列为第八问题的一部分。
 
 ## 1903 年
 
-- 格拉姆(Gram) 计算出了 黎曼 $\zeta$ 函数前 $15$ 个非平凡零点。
+- 格拉姆 (Gram) 计算出了 黎曼 $\zeta$ 函数前 $15$ 个非平凡零点。
 
 ## 1905 年
 
-- 曼戈尔特(von Mangoldt) 证明了黎曼-曼戈尔特公式(Riemann–von Mangoldt formula)， 即黎曼的论文所提出的三个重要命题中的第一个。
+- 曼戈尔特 (von Mangoldt) 证明了黎曼-曼戈尔特公式 (Riemann–von Mangoldt Formula)， 即黎曼的论文所提出的三个重要命题中的第一个。
 
 ## 1914 年
 
-- Bohr 和 Landau 证明了 Bohr-Landau 定理。
+- 玻尔 (Bohr) 和 兰道(Landau) 证明了玻尔-兰道定理 (Bohr-Landau Theorem)。
 
-- Hardy 证明了 Hardy 定理。
+- 哈代 (Hardy) 证明了 哈代定理(Hardy's Theorem)。
 
 ## 1921 年
 
-- Hardy 和 Littlewood 证明了 Hardy-Littlewood 定理。
+- 哈代 (Hardy) 和 利特尔伍德(Littlewood) 证明了 哈代-利特尔伍德定理 (Hardy-Littlewood Theorem)。
 
 ## 1932 年
 
-- Siegel 从 Riemann 手稿中整理发现了 Riemann-Siegel 公式。
+- 西格尔(Siegel) 从黎曼手稿中整理发现了 黎曼-西格尔公式 (Riemann-Siegel Formula)。
 
 ## 1936 年
 
-- Titchmarsh 计算出了 Riemann ζ 函数前 1041 个非平凡零点。
+- 蒂奇马什 (Titchmarsh) 计算出了 黎曼 $\zeta$ 函数前 $1041$ 个非平凡零点。
 
 ## 1942 年
 
-- Selberg 证明了临界线定理。
+- 塞尔伯格 (Selberg) 证明了塞尔伯格临界线定理。
 
 ## 1948 年
 
-- Weil 证明了有限域上代数曲线的 “山寨版” Riemann 猜想。
+- 韦伊 (Weil) 证明了有限域上代数曲线的 “山寨版”黎曼猜想。
 
 ## 1949 年
 
-- Weil 提出了 Weil 猜想， 其中包含了有限域上代数簇的 “山寨版” Riemann 猜想。
+- 韦伊 (Weil) 提出了韦伊猜想， 其中包含了有限域上代数簇的 “山寨版” 黎曼猜想。
 
 ## 1953 年
 
-- Turing 计算出了 Riemann ζ 函数前 1104 个非平凡零点。
+- 图灵 (Turing) 计算出了 黎曼 $\zeta$ 函数前 $1104$ 个非平凡零点。
 
 ## 1972 年
 
-- Montgomery 提出了 Montgomery 对关联假设。
+- 蒙哥马利 (Montgomery) 提出了蒙哥马利对关联假设。
 
-- Dyson 发现了 Montgomery 对关联假设与随机矩阵理论之间的相似性。
+- 戴森 (Dyson) 发现了蒙哥马利对关联假设与随机矩阵理论之间的相似性。
 
 ## 1974 年
 
-- Levinson 证明了 Levinson 临界线定理。
+- 莱文森 (Levinson) 证明了莱文森临界线定理。
 
-- Deligne 证明了有限域上代数簇的 “山寨版” Riemann 猜想。
+- 德利涅 (Deligne) 证明了有限域上代数簇的 “山寨版” 黎曼猜想。
 
 ## 1982 年
 
-- te Riele 计算出了 Riemann ζ 函数前 307,000,000 个非平凡零点。
+- 特里奥 (te Riele) 计算出了 黎曼 $\zeta$ 函数前 $307,000,000$ 个非平凡零点。
 
 ## 1983 年
 
