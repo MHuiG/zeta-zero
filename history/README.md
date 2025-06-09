@@ -84,31 +84,31 @@
 
 ## 1983 年
 
-- Bohigas 等人提出了 Bohigas–Giannoni–Schmit 猜想。
+- 博希格斯(Bohigas) 等人提出了博希格斯-吉安诺尼-斯密特猜想 (Bohigas–Giannoni–Schmit Hypothesis)。
 
 ## 1985 年
 
-- Berry 计算出了 Riemann ζ 函数非平凡零点的密度函数。
+- 贝里 (Berry) 计算出了黎曼 $\zeta$ 函数非平凡零点的密度函数。
 
 ## 1989 年
 
-- Conrey 证明了 Conrey 临界线定理。
+- 康瑞 (Conrey) 证明了康瑞临界线定理。
 
 ## 1999 年
 
-- Connes 发表了从非对易几何等角度研究 Riemann 猜想的论文。
+- 孔涅 (Connes) 发表了从非对易几何等角度研究黎曼猜想的论文。
 
 ## 2000 年
 
-- 美国 Clay 数学研究所为包括 Riemann 猜想在内的七个 “千禧年问题” 设立了每个一百万美元的巨奖。
+- 美国克雷数学研究所为包括黎曼猜想在内的七个 “千禧年问题” 设立了每个一百万美元的巨奖。
 
 ## 2001 年
 
-- Wedeniwski 启动了计算 Riemann ζ 函数非平凡零点的分布式系统——ZetaGrid。
+- 魏德涅夫斯基 (Wedeniwski) 启动了计算黎曼 $\zeta$ 函数非平凡零点的分布式系统——ZetaGrid。
 
 ## 2004 年
 
-- de Branges 宣称证明了 Riemann 猜想 (但未得到数学界的承认)。
+- 德布朗基 (de Branges) 宣称证明了 Riemann 猜想 (但未得到数学界的承认)。
 
-- Gourdon 与 Demichel 验证了 Riemann ζ 函数前十万亿 (1013) 个零点位于临界线上。
+- 古尔登 (Gourdon) 与 戴密克尔(Demichel) 验证了黎曼 $\zeta$ 函数前十万亿 ( $10^13$ ) 个零点位于临界线上。
 
