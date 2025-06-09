@@ -22,7 +22,7 @@
 
 ## 1900 年
 
-- 希尔伯特 (Hilbert) 作了题为 “数学问题” 的著名演讲， 黎曼猜想被列为第八问题的一部分。
+- 希尔伯特 (Hilbert) 作了题为 “数学问题” 的著名演讲， 黎曼猜想被列为第八问题的一部分。[...](https://people.tamu.edu/~rojas//hilbert23reprinted.pdf)
 
 ## 1903 年
 
