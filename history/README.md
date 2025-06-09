@@ -118,10 +118,10 @@
 
 ## 2022 年
 
-- 张益唐 (Tom Zhang) 关于郎道-西格尔零点猜想 (Landau-Siegel Zeros Conjecture) 的最新论文在预印本网站arXiv上正式对外公开。
+- 张益唐 (Tom Zhang) 关于兰道-西格尔零点猜想 (Landau-Siegel Zeros Conjecture) 的最新论文在预印本网站 arXiv 上正式对外公开。
 
 ## 2024 年
 
-- 麻省理工学院的Larry Guth和牛津大学的菲尔兹奖得主James Maynard，在论文预印网站arXiv上提交了一篇新的论文，表示他们改进了一项已经停滞了80多年的与黎曼猜想有关的结果。
+- 拉里·古斯 (Larry Guth) 和詹姆斯·梅纳德 (James Maynard)，改进了一项已经停滞了80多年的与黎曼猜想有关的结果。
 
 ## 黎曼猜想至今尚未被成功证明
