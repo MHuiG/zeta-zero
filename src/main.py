@@ -23,8 +23,6 @@ C_2 = (1 / ((2 ** 11) * (3 ** 2) * (sym.pi ** 4))) * sym.diff(C_0, p, 6) + (1 / 
 C_3 = - (1 / ((2 ** 16) * (3 ** 4) * (sym.pi ** 6))) * sym.diff(C_0, p, 9) - (1 / ((2 ** 8) * 3 * 5 * (sym.pi ** 4))) * sym.diff(C_0, p, 5) - (1 / ((2 ** 6) * (sym.pi ** 2))) * sym.diff(C_0, p, 1)
 C_4 = (1 / ((2 ** 23) * (3 ** 5) * (sym.pi ** 8))) * sym.diff(C_0, p, 12) + (11 / ((2 ** 17) * (3 ** 2) * 5 * (sym.pi ** 6))) * sym.diff(C_0, p, 8) + (19 / ((2 ** 13) * 3  * (sym.pi ** 4))) * sym.diff(C_0, p, 4) + (1 / ((2 ** 7) * (sym.pi ** 2))) * C_0
 
-
-
 def compute_zeta_AS(t):
     mu = complex(0.5, -t)
     NUM = np.ceil((np.log2(1+2*t) + PI/2 * t * np.log2(np.e) - np.log2(ERROR) - np.log2(abs(1-2**mu))) / 3)
