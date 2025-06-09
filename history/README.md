@@ -48,6 +48,10 @@
 
 - 希尔伯特 (Hilbert) 作了题为 “数学问题” 的著名演讲， 黎曼猜想被列为第八问题的一部分。[...](https://people.tamu.edu/~rojas//hilbert23reprinted.pdf)
 
+## 1901 年
+
+- 冯·科赫 (von Koch) 提出如果黎曼猜想成立，那么 $\pi(x)=Li(x)+O(\sqrt{x}lnx)$ .
+
 ## 1903 年
 
 - 格拉姆 (Gram) 计算出了 黎曼 $\zeta$ 函数前 $15$ 个非平凡零点。
