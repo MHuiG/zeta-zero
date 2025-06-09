@@ -4,6 +4,10 @@
 
 - 欧几里得（Euclid）提出欧几里得素数定理 (Euclidean prime numbertheorem).
 
+## 公元前 200 年
+
+- 埃拉托斯特尼 (Eratosthenes) 提出一种用来生成素数的筛法：埃拉托斯特尼筛法(sieve of Eratosthenes).
+
 ## 1859 年
 
 - 黎曼 (Riemann) 提出了黎曼猜想 (Riemann Hypothesis)。 [...](https://www.claymath.org/wp-content/uploads/2023/04/riemann1859.pdf)  [...](https://www.maths.tcd.ie/pub/HistMath/People/Riemann/Zeta/EZeta.pdf)
