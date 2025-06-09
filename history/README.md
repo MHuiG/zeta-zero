@@ -12,6 +12,10 @@
 
 - 欧拉(Euler)提出欧拉乘积公式(Euler product formula).
 
+## 1792 年
+
+- 高斯经过深入分析和例证，对素数分布提出猜测: $\pi(x)=\frac{x}{ln(x)}$ 但高斯未将自己的猜测公诸于世.
+
 ## 1859 年
 
 - 黎曼 (Riemann) 提出了黎曼猜想 (Riemann Hypothesis)。 [...](https://www.claymath.org/wp-content/uploads/2023/04/riemann1859.pdf)  [...](https://www.maths.tcd.ie/pub/HistMath/People/Riemann/Zeta/EZeta.pdf)
