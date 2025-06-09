@@ -108,13 +108,17 @@
 
 ## 2004 年
 
-- 德布朗基 (de Branges) 宣称证明了 Riemann 猜想 (但未得到数学界的承认)。
+- 德布朗基 (de Branges) 宣称证明了黎曼猜想 (但未得到数学界的承认)。
 
 - 古尔登 (Gourdon) 与 戴密克尔(Demichel) 验证了黎曼 $\zeta$ 函数前十万亿 ( $10^{13}$ ) 个零点位于临界线上。
 
+## 2018 年
+
+- 迈克尔·阿蒂亚 (Michael Atiyah) 宣称证明了黎曼猜想 (但未得到数学界的承认)。
+
 ## 2022 年
 
-- 张益唐在参加北京大学校友Zoom线上会议时，口头表达了自己攻克朗道—西格尔零点猜想（Landau-Siegel Zeros Conjecture）的最新进展。
+- 张益唐 (Tom Zhang) 关于郎道-西格尔零点猜想 (Landau-Siegel Zeros Conjecture) 的最新论文在预印本网站arXiv上正式对外公开。
 
 ## 2024 年
 
