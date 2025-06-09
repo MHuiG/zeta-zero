@@ -118,7 +118,7 @@
 
 ## 2022 年
 
-- 张益唐 (Tom Zhang) 关于兰道-西格尔零点猜想 (Landau-Siegel Zeros Conjecture) 的最新论文在预印本网站 arXiv 上正式对外公开。
+- 张益唐关于兰道-西格尔零点猜想 (Landau-Siegel Zeros Conjecture) 的最新论文在预印本网站 arXiv 上正式对外公开。[...](https://arxiv.org/abs/2211.02515)
 
 ## 2024 年
 
