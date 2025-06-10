@@ -26,6 +26,6 @@ def draw_zeta_critical_line(begin, end, step=0.1):
 
 
 if __name__ == "__main__":
-    draw_zeta_critical_line(1, 50)
+    draw_zeta_critical_line(-50, 50)
 
     
