@@ -8,6 +8,10 @@
 
 - 埃拉托斯特尼 (Eratosthenes) 提出一种用来生成素数的筛法：埃拉托斯特尼筛法(sieve of Eratosthenes).
 
+# 1350 年
+
+- 尼可尔·奥里斯姆 (Nicole Oresme) 证明调和级数发散，但知道的人不多。17世纪时，皮耶特罗·曼戈里、约翰·伯努利和雅各布·伯努利完成了全部证明工作。
+
 ## 1731 年
 
 - 欧拉 (Euler) 提出欧拉乘积公式(Euler product formula).
