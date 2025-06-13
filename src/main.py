@@ -10,6 +10,7 @@ CHANGE_METHOD = 200 # 200 0 -1
 ZeroNo = 0
 ZeroHigh = 0
 ZeroHighAdd = 1000 #1000
+DELTA = 0.1
 
 PI = np.pi
 z = sym.Symbol('z')
@@ -199,7 +200,7 @@ if __name__ == "__main__":
     def write_zero(no,zero):
       f.write("|  "+str(no)+" | 1/2+"+str(zero)+"i |\n")
 
-    res=check_RH(ZeroHigh+ZeroHighAdd, 0.1)
+    res=check_RH(ZeroHigh+ZeroHighAdd, DELTA)
     print(res)
 
     if not res:
