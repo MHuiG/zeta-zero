@@ -123,7 +123,7 @@ def compute_Zeta(t):
 
 def check_RH(T, delta):
     t1 = time.perf_counter()
-    t = delta + ZeroHigh
+    t = ZeroHigh
     count_zeros = ZeroNo
     while t < T:
         if np.sign(compute_Zeta(t)) * compute_Zeta(t + delta) < 0:
@@ -204,6 +204,6 @@ if __name__ == "__main__":
     print(res)
 
     if not res:
-        fe = open("./results/error.md", 'w')
+        fe = open("./results/errors/error.md", 'w')
         fe.write("RH is not valid.\nHight:"+str(ZeroHigh+ZeroHighAdd))
 
