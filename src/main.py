@@ -200,10 +200,11 @@ if __name__ == "__main__":
     def write_zero(no,zero):
       f.write("|  "+str(no)+" | 1/2+"+str(zero)+"i |\n")
 
+    
     res=check_RH(ZeroHigh+ZeroHighAdd, DELTA)
     print(res)
-
+"""
     if not res:
         fe = open("./results/errors/error.md", 'w')
         fe.write("RH is not valid.\nHight:"+str(ZeroHigh+ZeroHighAdd))
-
+"""
